@@ -1,4 +1,4 @@
-#Logik für "Entschärfen" des Sticks
+#Entschärfen
 import board
 import digitalio
 import sys
@@ -14,7 +14,7 @@ if not safe_pin.value:
 	sys.exit()
 
 #######################################################################################
-# Ruber Ducky Logik
+# Ruber Ducky
 import usb_hid
 import time
 from adafruit_hid.keyboard import Keyboard
@@ -22,11 +22,11 @@ from keycode_win_de import Keycode
 from keyboard_layout_win_de import KeyboardLayout
 
 
-# Tastatur initialisieren (Achten Sie auf das große 'K' bei Keyboard und 'devices' mit 's')
+# Tastatur initialisieren 
 kbd = Keyboard(usb_hid.devices)
 layout = KeyboardLayout(kbd)
 
-# 5 Sekunden warten, bis der PC das USB-Gerät bereitgestellt hat
+# Warten
 time.sleep(1.5)
 
 
